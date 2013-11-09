@@ -1,9 +1,10 @@
-(ns rhapsode.routes)
+(ns rhapsode.routes
+	(:use markdown.core))
 
 (def directory (clojure.java.io/file "/Users/petervanonselen/Development/rhapsode/resources/posts/"))
 
 (defn latest []
-	(slurp (str (.getPath directory) "/" (last (seq (.list directory))))))
+	(md-to-html-string (slurp (str (.getPath directory) "/" (last (seq (.list directory)))))))
 
 (defn get-article [name]
 	(slurp (str (.getPath directory) "/" name ".md")))
