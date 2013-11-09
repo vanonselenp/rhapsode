@@ -12,4 +12,4 @@ Decisions made up front to guide the design:
 
 Aim is to make the publish process be done by simply putting a .md file in a directory.  
 
-Copyright © 203 Peter van Onselen
+Copyright © 2013 Peter van Onselen
