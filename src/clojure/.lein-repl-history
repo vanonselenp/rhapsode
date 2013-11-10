@@ -1,0 +1,6 @@
+(def f (clojure.java.io/file "."))
+f
+(.list f)
+(seq (.list f))
+(seq (.list (clojure.java.io/file "./resources/posts")))
+exit

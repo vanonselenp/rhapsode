@@ -1,6 +1,6 @@
 (ns rhapsode.core
 	(:use compojure.core
-		  rhapsode.routes)
+		  rhapsode.views)
 	(:require [compojure.route :as route]))
 
 (defroutes app
